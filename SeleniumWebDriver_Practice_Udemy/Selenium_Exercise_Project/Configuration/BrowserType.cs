@@ -10,6 +10,6 @@ namespace Selenium_Exercise_Project.Configuration
     {
         Firefox,
         Chrome,
-        IExplorer
+        IE
     }
 }
