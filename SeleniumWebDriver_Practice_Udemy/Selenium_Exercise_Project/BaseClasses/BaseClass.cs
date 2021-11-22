@@ -12,6 +12,7 @@ using Selenium_Exercise_Project.Settings;
 
 namespace Selenium_Exercise_Project.BaseClasses
 {
+    [TestClass]
     public class BaseClass
     {
         private static IWebDriver GetChromeDriver()

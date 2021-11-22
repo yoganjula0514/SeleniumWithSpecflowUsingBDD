@@ -38,5 +38,11 @@ namespace Selenium_Exercise_Project
             Console.WriteLine($"Username : {appConfigReader.GetUsername()}");
             Console.WriteLine($"Password : {appConfigReader.GetPassword()}");
         }
+
+        [TestMethod]
+        public void UsageOfObjectRepository()
+        {
+
+        }
     }
 }
