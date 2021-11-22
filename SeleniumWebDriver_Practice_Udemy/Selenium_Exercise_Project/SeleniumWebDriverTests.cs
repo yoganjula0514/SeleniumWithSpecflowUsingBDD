@@ -4,6 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using Selenium_Exercise_Project.Configuration;
+using Selenium_Exercise_Project.Interfaces;
 
 namespace Selenium_Exercise_Project
 {
@@ -21,11 +22,21 @@ namespace Selenium_Exercise_Project
         }
 
         [TestMethod]
-        public void ReadingConfigurationAppSettings()
+        public void ReadingConfigurationAppSettings_DirectlyFromConfigurationManager()
         {
             Console.WriteLine(ConfigurationManager.AppSettings.Get("Browser"));
             Console.WriteLine(ConfigurationManager.AppSettings.Get("Username"));
             Console.WriteLine(ConfigurationManager.AppSettings.Get("Password"));
+        }
+
+
+        [TestMethod]
+        public void ReadingConfigurationAppSettings_FromAppConfigurationReader()
+        {
+            IConfig appConfigReader = new AppConfigReader();
+            Console.WriteLine($"Broswer : {appConfigReader.GetBrowser()}");
+            Console.WriteLine($"Username : {appConfigReader.GetUsername()}");
+            Console.WriteLine($"Password : {appConfigReader.GetPassword()}");
         }
     }
 }

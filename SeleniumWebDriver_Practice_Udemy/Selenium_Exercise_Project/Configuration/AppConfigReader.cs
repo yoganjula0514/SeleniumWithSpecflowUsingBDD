@@ -9,7 +9,7 @@ using Selenium_Exercise_Project.Settings;
 
 namespace Selenium_Exercise_Project.Configuration
 {
-    public class AppConfigurator : IConfig
+    public class AppConfigReader : IConfig
     {
         public BrowserType GetBrowser()
         {
