@@ -8,5 +8,8 @@ namespace Selenium_Exercise_Project.Configuration
 {
     public enum BrowserType
     {
+        Firefox,
+        Chrome,
+        IExplorer
     }
 }
