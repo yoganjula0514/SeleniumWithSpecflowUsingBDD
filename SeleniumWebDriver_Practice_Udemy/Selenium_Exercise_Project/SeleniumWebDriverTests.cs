@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -16,6 +17,14 @@ namespace Selenium_Exercise_Project
             webDriver.Manage().Window.Maximize();
             webDriver.Close();
             webDriver.Quit();
+        }
+
+        [TestMethod]
+        public void ReadingConfigurationAppSettings()
+        {
+            Console.WriteLine(ConfigurationManager.AppSettings.Get("Browser"));
+            Console.WriteLine(ConfigurationManager.AppSettings.Get("Username"));
+            Console.WriteLine(ConfigurationManager.AppSettings.Get("Password"));
         }
     }
 }
