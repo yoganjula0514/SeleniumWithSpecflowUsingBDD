@@ -3,6 +3,7 @@ using System.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using Selenium_Exercise_Project.Configuration;
 
 namespace Selenium_Exercise_Project
 {
