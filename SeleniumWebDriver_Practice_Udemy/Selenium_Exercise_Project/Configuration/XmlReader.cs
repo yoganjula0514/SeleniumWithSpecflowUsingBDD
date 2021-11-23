@@ -23,5 +23,10 @@ namespace Selenium_Exercise_Project.Configuration
         {
             throw new NotImplementedException();
         }
+
+        public string GetWebsite()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

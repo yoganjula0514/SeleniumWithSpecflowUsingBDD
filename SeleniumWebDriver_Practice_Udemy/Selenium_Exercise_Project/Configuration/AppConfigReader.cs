@@ -28,5 +28,10 @@ namespace Selenium_Exercise_Project.Configuration
         {
             return ConfigurationManager.AppSettings.Get(AppConfigKeys.Password);
         }
+
+        public string GetWebsite()
+        {
+            return ConfigurationManager.AppSettings.Get(AppConfigKeys.Website);
+        }
     }
 }
