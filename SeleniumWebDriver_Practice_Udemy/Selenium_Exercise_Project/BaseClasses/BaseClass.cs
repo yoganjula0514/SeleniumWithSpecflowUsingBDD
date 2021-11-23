@@ -57,5 +57,15 @@ namespace Selenium_Exercise_Project.BaseClasses
                     throw new NoSuitableDriverFound($"'{browserType.ToString()}' not found.");
             }
         }
+
+        [AssemblyCleanup]
+        public static void TearDown()
+        {
+            if (ObjectRepository.WebDriver != null)
+            {
+                ObjectRepository.WebDriver.Close();
+                ObjectRepository.WebDriver.Quit();
+            }
+        }
     }
 }
