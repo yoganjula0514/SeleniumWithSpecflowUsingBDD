@@ -17,6 +17,7 @@ namespace Selenium_Exercise_Project.TestScripts.PageNavigation
         public void OpenYoutubeWebsite()
         {
             NavigationHelper.NavigateToUrl(ObjectRepository.Config.GetWebsite());
+            Console.WriteLine($"Title of the page {WindowHelper.GetTitle()}");
         }
     }
 }
