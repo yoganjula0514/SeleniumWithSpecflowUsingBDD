@@ -70,6 +70,7 @@
     <Compile Include="Settings\AppConfigKeys.cs" />
     <Compile Include="Settings\ObjectRepository.cs" />
     <Compile Include="TestScripts\PageNavigation\TestPageNavigation.cs" />
+    <Compile Include="TestScripts\WebElement\TestWebElement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
